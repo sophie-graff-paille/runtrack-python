@@ -1,19 +1,18 @@
 import math
 def triangle(a,b,c):
     if a + b >= c and a + c >= b and c + b >= a:
-        result = "c'est un triangle"
+        result = print("c'est un triangle")
         if a == b == c:
-            result = "c'est un triangle équilatéral"
+            result = print("c'est un triangle équilatéral")
         elif a == b or b == c or c == a:
             if a**2 + b**2 == int(c**2):
-                result = "c'est un triangle isocèle et rectangle"
+                result = print("c'est un triangle isocèle et rectangle")
             else:
-                result = "c'est un triangle isocèle"
+                result = print("c'est un triangle isocèle")
         elif a**2 + b**2 == c**2:
-            result = "c'est un triangle rectangle"
+            result = print("c'est un triangle rectangle")
     else:
-        result = "ce n'est pas un triangle"
-    print(result)
+        result = print("ce n'est pas un triangle")
 
 triangle(10,10,10)
 triangle(10,6,10)
